@@ -1,1 +1,11 @@
-
+pat="github_aob"
+Id="507585"
+srcLocation="/home/mfuser/jenkins/workspace/aob-root-module/aob-build/VE_mvp_aobdxc/"
+inProgressBuildType="FailBuild"
+isMicroservice="false"
+overrideGlobalConfig="true"
+inProgressScanActionType="Queue"
+isMicroservice="false"
+overrideGlobalConfig="true"
+remediationScanPreferenceType="NonRemediationScanOnly"
+pollingInterval="2"

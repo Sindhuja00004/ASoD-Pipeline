@@ -1,1 +1,42 @@
+def nodetest() {
+	echo ('alive on $(hostname)')
+}
+pipeline {
+   agent { label 'MVP'}
+    tools {
+        maven 'Maven 3.6.0'
+    }
+parameters {
+        booleanParam(
+            name: 'Checkout',
+            defaultValue: true,
+        )
+        booleanParam(
+            name: 'Static',
+            defaultValue: true,
+        )
+    }
+stages {
+ stage ('Checkout') {
+	agent any
+     when {
+	 expression { params.Checkout == true }
+	 }
+           
+           steps {
+             build 'mod_checkout'
+                 }
+    }
+ stage ('Static Scan with ASoD') {
+	agent any
+     when {
+	 expression { params.Static == true }
+	 }
+           
+           steps {
+                build 'mod_asod'
+                 }
+    }
+    }
+}
 

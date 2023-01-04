@@ -1,1 +1,62 @@
+pipeline {
 
+    agent any
+    environment {
+        DEMO_NUMBER = 'DEMO-1.1'
+    }
+
+    stages {
+
+        stage('Reading environment variable defined in groovy file') {
+            agent any
+            steps {
+                script {
+                    load "/home/mfuser/jenkins/.envars/variables.groovy"
+            
+                }
+            }
+        }
+       stage('Static Scan with ASoD') 
+		    {
+            agent any
+                steps {
+                script {
+                   // load "/var/lib/jenkins/.envars/variables.groovy"
+echo "${pat}"
+echo "${Id}"
+echo "${srcLocation}"
+echo "${inProgressBuildType}"
+echo "${isMicroservice}"
+echo "${overrideGlobalConfig}"
+echo "${inProgressScanActionType}"
+echo "${isMicroservice}"
+echo "${overrideGlobalConfig}"
+echo "${remediationScanPreferenceType}"
+echo "${pollingInterval}"
+                      fodStaticAssessment applicationName: '', applicationType: '', 
+                      assessmentType: '', attributes: '', auditPreference: '', 
+                      bsiToken: '', businessCriticality: '', entitlementId: '', 
+                      entitlementPreference: '', frequencyId: '', 
+                      inProgressBuildResultType: "${inProgressScanActionType}", 
+                      inProgressScanActionType: "${inProgressScanActionType}", 
+                      isMicroservice: "${isMicroservice}", languageLevel: '', 
+                      microserviceName: '', openSourceScan: '', 
+                      overrideGlobalConfig: "${overrideGlobalConfig}", 
+                      personalAccessToken: '', 
+                      releaseId: "${Id}", releaseName: '', 
+                      remediationScanPreferenceType: "${remediationScanPreferenceType}", 
+                      scanCentral: '', scanCentralBuildCommand: '', scanCentralBuildFile: '', 
+                      scanCentralBuildToolVersion: '', scanCentralIncludeTests: '', 
+                      scanCentralRequirementFile: '', scanCentralSkipBuild: '', 
+                      scanCentralVirtualEnv: '', sdlcStatus: '', 
+                      srcLocation: '${srcLocation}', technologyStack: '', 
+                      tenantId: '', username: ''
+                      fodPollResults bsiToken: '', personalAccessToken: '${pat}', 
+                      pollingInterval: "${pollingInterval}", releaseId: "${Id}", tenantId: '', username: ''
+                      // removed policyFailureBuildResultPreference: 1
+                    }
+                }
+		    }
+		    
+    }
+}

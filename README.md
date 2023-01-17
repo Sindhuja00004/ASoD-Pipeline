@@ -54,6 +54,12 @@ ________________________________________________________________________________
       Keep the groovy file which contains variables, and load the variables from the github into the pipeline during the runtime.
       
   ![Capture](https://user-images.githubusercontent.com/95271479/210702011-69d33082-8bee-4bd5-8748-ed09bfa3cbf5.JPG)
+  
+  
+
+___________________________________________________________________________________________________________________________________________________________________
+
+PIPELINE VIEW
 
 
   

@@ -25,12 +25,9 @@ ________________________________________________________________________________
  _____________________________________________________________________________________________________________________________________________________________________
      MODULAR PIPELINE
      
-* Modular Pipeline is basically the combibation of Parameterization and Variablization. 
-* Modularization helps the user to be more precise in writing and segregating the code. 
-* We can segregate the stages according to the requirement.
-* Modular Pipeline yaml file consists of two stages i.e "Sonarqube Code Analysis" and "Static Scan with ASoD"
+* Modular pipeline is logically isolated and can be reused. Modular pipelines are easier to develop, test and maintain, and are portable so they can be copied and reused between projects.
 
-![image](https://user-images.githubusercontent.com/95271479/210701829-84f9c3f3-28b1-40f8-af6c-3ea158b8deb0.png)
+* This Modular Pipeline is Variablised and Parametrised.
 
 
 

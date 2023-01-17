@@ -62,7 +62,7 @@ ________________________________________________________________________________
 PIPELINE VIEW
 
 * Pipeline has two stages Checkout and ASoD
-* Checkout stage will get the latese source code from GitHub repository.
+* Checkout stage will get the latest source code from GitHub repository.
 * ASoD stage initiates the security scan.
 
 <img width="602" alt="asod-mod" src="https://user-images.githubusercontent.com/52232710/212962784-014be1d8-e298-4430-816b-b772bde673cd.PNG">

@@ -41,7 +41,8 @@ ________________________________________________________________________________
 * Parameterization help to control the portion of the test to be executed. Here, in this modular pipeline we are using boolean paramter.
 Hence by defining Boolean Parameter inside a jenkins pipeline we can trigger the "Build with Paramaters" option.
       
-  ![image](https://user-images.githubusercontent.com/95271479/210701613-8b04a423-8721-450c-a78f-9a04b49bbd8b.png)
+  ![image](https://user-images.githubusercontent.com/95271479/214265025-e1ab3932-fe87-43c7-900d-c6db4fa0c74b.png)
+
 
 
 

@@ -55,7 +55,8 @@ ________________________________________________________________________________
 * Pipeline Variablization helps to separate configuration values from the core and inject during the runtime. Variablization is done for ASoD and sonarqube.
 Keep the groovy file which contains variables, and load the variables from the github into the pipeline during the runtime.
       
-  ![Capture](https://user-images.githubusercontent.com/95271479/210702011-69d33082-8bee-4bd5-8748-ed09bfa3cbf5.JPG)
+  ![image](https://user-images.githubusercontent.com/95271479/214265681-799ca998-85d7-49e9-9b47-8299a3579e10.png)
+
   
   
 

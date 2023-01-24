@@ -1,11 +1,13 @@
 def nodetest() {
 	echo ('alive on $(hostname)')
 }
+// Installing Maven 3.6.0 tool
 pipeline {
    agent { label 'MVP'}
     tools {
         maven 'Maven 3.6.0'
     }
+// Declaring the Boolean Parameters
 parameters {
         booleanParam(
             name: 'Checkout',
@@ -16,25 +18,26 @@ parameters {
             defaultValue: true,
         )
     }
+// Declaring the stages 
 stages {
  stage ('Checkout') {
 	agent any
      when {
-	 expression { params.Checkout == true }
+	 expression { params.Checkout == true } // Mapping the Boolean Parameter
 	 }
            
            steps {
-             build 'mod_checkout'
+             build 'mod_checkout' // Calling the Sub Pipeline 
                  }
     }
  stage ('Static Scan with ASoD') {
 	agent any
      when {
-	 expression { params.Static == true }
+	 expression { params.Static == true } // Mapping the Boolean Parameter
 	 }
            
            steps {
-                build 'mod_asod'
+                build 'mod_asod' Calling the Sub Pipeline
                  }
     }
     }

@@ -69,6 +69,17 @@ PIPELINE VIEW
 <img width="602" alt="asod-mod" src="https://user-images.githubusercontent.com/52232710/212962784-014be1d8-e298-4430-816b-b772bde673cd.PNG">
 
 
+____________________________________________________________________________________________________________________________________________________________________
+
+INTEGRATE ASOD STAGE TO THE EXISTING PIPELINE
+
+* Add the ASoD stage in the main pipeline, with this stage will call the ASoD pipeline.
+* This eliminates the complexity of configuring ASoD to the existing main pipeline.
+* ASoD pipeline has been variablized, this helps scaning multiple applications by changing the variables.
+* ASoD Variable file which is in groovy is maintained in github.
+* ASoD project specific changes can be done directly in the github without modifying the pipeline, this eliminates manual error and will onboard the applications    quickly.
+
+
   
   
   

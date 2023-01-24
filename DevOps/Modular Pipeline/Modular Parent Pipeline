@@ -27,7 +27,7 @@ stages {
 	 }
            
            steps {
-             build 'mod_checkout' // Calling the Sub Pipeline 
+             build 'mod_checkout'  // Calling the Sub Pipeline 
                  }
     }
  stage ('Static Scan with ASoD') {
@@ -37,7 +37,7 @@ stages {
 	 }
            
            steps {
-                build 'mod_asod' Calling the Sub Pipeline
+                build 'mod_asod' // Calling the Sub Pipeline
                  }
     }
     }
